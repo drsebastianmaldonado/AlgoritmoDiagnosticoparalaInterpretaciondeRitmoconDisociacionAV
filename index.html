@@ -70,7 +70,7 @@
                 </div>
                 <div>
                     <h1 class="font-poppins font-bold text-base sm:text-lg text-clinical-500 dark:text-white leading-tight">CardioApp <span class="text-xs bg-clinical-teal/20 text-clinical-teal px-1.5 py-0.5 rounded ml-1">Pro</span></h1>
-                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">Asistente Clínico de Diagnóstico Diferencial en Disociación AV</p>
+                    <p class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">Diagnóstico Diferencial en Disociación AV</p>
                 </div>
             </div>
             
@@ -107,17 +107,8 @@
                             </div>
                             <h2 class="font-poppins font-bold text-2xl text-slate-800 dark:text-white tracking-tight">Criterio de Entrada Mandatorio</h2>
                             <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                                Para garantizar la validez del algoritmo, el paciente debe poseer confirmación clínica o electrocardiográfica de <span class="font-bold text-slate-800 dark:text-white underline decoration-clinical-teal decoration-2">Disociación Aurículoventricular (AV)</span> (independencia total de ondas P y complejos QRS).
+                                El paciente debe poseer confirmación electrocardiográfica de <span class="font-bold text-slate-800 dark:text-white underline decoration-clinical-teal decoration-2">Disociación Aurículoventricular (AV)</span> (independencia total de ondas P y complejos QRS).
                             </p>
-                            <div class="bg-slate-50 dark:bg-slate-900 p-3 rounded-xl border border-slate-200 dark:border-slate-800 text-left text-xs space-y-2">
-                                <span class="font-bold text-slate-500 uppercase block tracking-wider"><i class="fa-solid fa-circle-info text-clinical-teal mr-1"></i> Signos cardinales a buscar:</span>
-                                <ul class="list-disc pl-4 space-y-1 text-slate-600 dark:text-slate-400">
-                                    <li>Ondas P marchando a su propia frecuencia (sin relación con QRS).</li>
-                                    <li>Ondas P "cañón" esporádicas en el pulso venoso yugular.</li>
-                                    <li>Variabilidad de la intensidad del primer ruido cardiaco (R1).</li>
-                                    <li>Presencia de latidos de captura o fusión (en caso de QRS ancho).</li>
-                                </ul>
-                            </div>
                             <div class="pt-2 flex flex-col sm:flex-row justify-center items-center gap-3">
                                 <button onclick="setDisociacion(true)" class="w-full sm:w-auto px-6 py-3 bg-clinical-500 hover:bg-clinical-600 text-white font-semibold rounded-xl shadow-md transition-all transform hover:-translate-y-0.5 active:translate-y-0">
                                     <i class="fa-solid fa-circle-check mr-2"></i> Sí, presenta Disociación AV
@@ -295,13 +286,6 @@
                                 </div>
                             </div>
 
-                            <!-- Opciones de Abordaje y Reportes -->
-                            <div class="space-y-3">
-                                <button onclick="openGuideModal()" class="w-full py-3 bg-clinical-500 hover:bg-clinical-600 text-white font-semibold rounded-xl shadow-md transition-all flex items-center justify-center space-x-2 text-sm sm:text-base">
-                                    <i class="fa-solid fa-book-medical"></i>
-                                    <span>Ver Guía de Manejo Clínico Completa</span>
-                                </button>
-                            </div>
                         </div>
                     </div>
 
@@ -588,7 +572,7 @@
                 conducta: 'Arritmia de alto riesgo. Solicitar con premura marcapasos transcutáneo o intravenoso provisional. Evitar la infusión de atropina por falta de respuesta infranodal. Monitorización continua en Unidad de Cuidados Críticos.'
             },
             'BS_ESC_NODAL': {
-                titulo: 'Bloqueo Sinusal con Escape Nodal Pasivo',
+                titulo: 'Bloqueo Sinusal con Escape Nodal',
                 def: 'Falla intrínseca del nódulo sinusal (Bloqueo o Paro sinusal prolongado) donde no se propagan estímulos auricular, desencadenando la activación de un marcapasos de escape protector en la unión AV.',
                 ecg: [
                     'Pausas sinusales de longitud significativa.',
